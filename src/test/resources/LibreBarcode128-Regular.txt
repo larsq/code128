@@ -1,0 +1,2 @@
+Required font available at https://fonts.google.com/specimen/Libre+Barcode+128
+Observe that font is available under separate license

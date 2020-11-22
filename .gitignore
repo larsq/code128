@@ -1,0 +1,11 @@
+.gradle/
+.idea/
+<<<<<<< HEAD
+build/
+=======
+node_modules/
+build/
+*.ttf
+
+yarn-error.log
+>>>>>>> 322c999... Initial commit

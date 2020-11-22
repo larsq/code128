@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+dependencies {
+    implementation('com.google.guava:guava:30.0-jre')
+    implementation('com.google.zxing:core:3.4.1')
+    implementation('com.google.zxing:javase:3.4.1')
+    implementation('ch.qos.logback:logback-classic:1.2.3')
+    testImplementation(platform('org.junit:junit-bom:5.7.0'))
+    testImplementation('org.apache.xmlgraphics:batik-svggen:1.13')
+    testImplementation('org.apache.xmlgraphics:batik-dom:1.13')
+    testImplementation('org.apache.xmlgraphics:batik-transcoder:1.13')
+    testImplementation('org.apache.xmlgraphics:batik-codec:1.13')
+    testImplementation('org.junit.jupiter:junit-jupiter')
+}
